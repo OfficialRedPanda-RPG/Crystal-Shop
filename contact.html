@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Vibe Crystals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Vibe<span>Crystals</span></div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="our-why.html">Our Why</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Let’s Talk Crystals & Creations</h1>
+      <p>
+        Questions, collabs, wholesale, or custom sets for your studio or
+        gaming setup — drop a message below.
+      </p>
+    </section>
+
+    <section class="section contact-section">
+      <div class="contact-info">
+        <h2>Reach Out</h2>
+        <p>
+          This is a demo site, but you can plug in your real email, social
+          links, or form service (Formspree, Tally, Notion, etc.).
+        </p>
+        <ul>
+          <li>📧 Email: <a href="mailto:hello@vibecrystals.demo">hello@vibecrystals.demo</a></li>
+          <li>📍 City: Your City, Your Vibe</li>
+          <li>📱 Instagram: @vibecrystals (placeholder)</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <!-- When ready, replace # with your Formspree/Tally action URL -->
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+
+        <label>
+          What are you reaching out about?
+          <select name="reason">
+            <option value="general">General question</option>
+            <option value="order">Order / product question</option>
+            <option value="wholesale">Wholesale / studio sets</option>
+            <option value="collab">Content / collab</option>
+            <option value="career">Career / role</option>
+          </select>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Tell us what you're dreaming up..."></textarea>
+        </label>
+
+        <button type="submit" class="btn primary full-width">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> VibeCrystals</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
